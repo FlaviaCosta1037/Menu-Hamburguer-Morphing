@@ -28,3 +28,25 @@ body {
     cursor: pointer; /*inclusão de um cursor*/
     transition: 0.3s; /*tempo da transição ao passar o mouse*/
 }
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /*Alinhamento um abaixo do outro*/
+    justify-content: center;
+    align-items: center;
+    position: relative; /*Poder manipular o pseudo elemento do card wrapper para fazer o efeito de borda para expansão na tela*/
+
+}
+
+/*Card before, estamos colocando absoluto ao card wrapper*/
+.card-wrapper::before {
+    content: ''; /*vazio*/
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    border: 1px solid white ;
+    opacity: 0;
+    transition: 00.3s;
+}
