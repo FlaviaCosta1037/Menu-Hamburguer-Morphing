@@ -12,3 +12,19 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.card {
+    height: 400px;
+    width: 500px;
+    background-image: url('/imagens/paisagem.jpeg');
+    background-position: center;
+    background-repeat: no-repeat; /*serve para evitar repetição caso seja muito grande*/
+    background-size: cover; /*fazer uma cobertura completa do background*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0.5); /*Filtro do card*/
+    color: white; /*Cor da fonte*/
+    cursor: pointer; /*inclusão de um cursor*/
+    transition: 0.3s; /*tempo da transição ao passar o mouse*/
+}
