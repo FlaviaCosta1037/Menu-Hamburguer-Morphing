@@ -50,3 +50,11 @@ body {
     opacity: 0;
     transition: 00.3s;
 }
+
+.card-wrapper h2 {
+    font-size: 40px;
+    text-transform: uppercase; /*Colocar tudo em letra maiuscula*/
+    letter-spacing: 4px; /*espaçamento entre as letras*/
+    margin: 0; 
+    transition:  0.3s;
+}
