@@ -62,8 +62,27 @@ body {
 .card-wrapper p {
     font-size: 0;
     visibility: hidden;
-    opacity: 0;
+    opacity: 0; /*Forma de esconder a borda para ser tratada no wrapper before*/
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
 }
+
+/*Card Hover - flutuação do card*/
+.card:hover {
+    filter: unset;
+}
+
+.card:hover > .card-wrapper::before { /*Forma de Selecionar o filho que é o card Wrapper e o before dele*/
+    height: 300px;
+    width: 400px;
+    opacity: 1;
+}
+
+.card:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: visible; /*Tornar visivel novamente o subtitulo do card*/
+    font-size: 14px ;
+}
+
+
