@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*Alinhamento do checkbox*/
+/*Configuração da classe wrapper*/
 .wrapper {
     background-color: rgb(221, 161, 171);
     width: 100%;
@@ -13,5 +13,27 @@
     justify-content: center;
     align-items: center;
 }
+
+/*Configuração do checkbox*/
+.checkbox {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative; /*Conseguir deixar os tracinhos absolutos ao checkbox. O filho trace será absoluto*/
+    cursor: pointer;
+}
+
+/*Configuração dos tracinhos*/
+.checkbox .tracer {
+    width: 90px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out; /*Começa e acaba lento. Segue numa animação leve no inicio e no fim*/
+}
+
+/*Falando com os elementos filhos*/
 
 
