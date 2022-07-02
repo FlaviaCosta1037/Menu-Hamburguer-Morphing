@@ -35,5 +35,19 @@
 }
 
 /*Falando com os elementos filhos*/
+/*Ajuste da distancia dos tracinhos filhos*/
 
+.checkbox .tracer:nth-child(1) {
+    top: 26px; 
+    transform: rotate(0);
+}
 
+.checkbox .tracer:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+
+.checkbox .tracer:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
+}
