@@ -51,3 +51,27 @@
     top: 66px;
     transform: rotate(0);
 }
+
+/*ID do input*/
+
+#toggle {
+   display: none; /*Escondendo o checkbox*/
+}
+
+/*Ativando o checkbox ao clicar*/
+#toggle:checked + .checkbox .tracer:nth-child(1) {
+    transform: rotate(45deg); /*Realizando a rotação para baixo do traço 1*/
+    top: 47px;
+}
+
+#toggle:checked + .checkbox .tracer:nth-child(2) {
+    transform: translateX(-100px); /*Realizndo a retirada do traço do meio de forma limpa */
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .tracer:nth-child(3) {
+    transform: rotate(-45deg); /*Realizando a rotação inversa do filho 1*/
+    top: 48px;
+}
